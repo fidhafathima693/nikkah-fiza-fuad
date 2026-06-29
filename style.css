@@ -247,3 +247,100 @@ transform:translateY(0);
 }
 
 }
+/* ===========================
+   FLOATING PETALS
+=========================== */
+
+.petals{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:2;
+}
+
+.petals span{
+
+    position:absolute;
+    top:-10%;
+
+    font-size:28px;
+
+    animation:fall linear infinite;
+}
+
+/* Different positions */
+
+.petals span:nth-child(1){
+left:5%;
+animation-duration:12s;
+}
+
+.petals span:nth-child(2){
+left:18%;
+animation-duration:10s;
+animation-delay:2s;
+}
+
+.petals span:nth-child(3){
+left:35%;
+animation-duration:14s;
+}
+
+.petals span:nth-child(4){
+left:50%;
+animation-duration:9s;
+animation-delay:1s;
+}
+
+.petals span:nth-child(5){
+left:65%;
+animation-duration:13s;
+}
+
+.petals span:nth-child(6){
+left:78%;
+animation-duration:11s;
+animation-delay:3s;
+}
+
+.petals span:nth-child(7){
+left:90%;
+animation-duration:15s;
+}
+
+.petals span:nth-child(8){
+left:98%;
+animation-duration:12s;
+animation-delay:4s;
+}
+
+@keyframes fall{
+
+0%{
+
+transform:
+translateY(-100px)
+rotate(0deg);
+
+opacity:0;
+
+}
+
+15%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+translateY(120vh)
+rotate(360deg);
+
+opacity:0;
+
+}
+
+}
