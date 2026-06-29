@@ -38,9 +38,8 @@ body{
     radial-gradient(circle at top,#fff5dc 0%,transparent 60%);
     opacity:.8;
 }
-
 /* ===========================
-   ENVELOPE
+   PREMIUM ENVELOPE
 =========================== */
 
 .envelope{
@@ -51,85 +50,47 @@ body{
 
     height:220px;
 
+    margin:auto;
+
     cursor:pointer;
 
-    transition:.8s;
-
 }
 
-/* Envelope Body */
-
-.envelope::before{
-
-    content:"";
-
-    position:absolute;
-
-    bottom:0;
-
-    width:100%;
-
-    height:170px;
-
-    background:#FFF8EF;
-
-    border:2px solid #D4AF37;
-
-    border-radius:0 0 12px 12px;
-
-    box-shadow:0 20px 40px rgba(0,0,0,.12);
-
-}
-
-/* Envelope Flap */
-
-.flap{
-
-    position:absolute;
-
-    width:100%;
-
-    height:120px;
-
-    background:#F7E7D2;
-
-    clip-path:polygon(0 0,100% 0,50% 100%);
-
-    transform-origin:top;
-
-    transition:1s;
-
-    z-index:5;
-
-}
-
-/* Invitation Card */
+/* Letter */
 
 .letter{
 
     position:absolute;
 
-    left:15px;
+    left:20px;
 
-    right:15px;
+    right:20px;
 
-    bottom:15px;
+    bottom:10px;
 
-    height:150px;
+    height:170px;
 
-    background:white;
+    background:#fffdf8;
 
     border-radius:10px;
 
-    display:flex;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
 
-    flex-direction:column;
+    display:flex;
 
     justify-content:center;
 
     align-items:center;
 
-    transition:1s;
+    z-index:1;
+
+    transition:1s ease;
+
+}
+
+.letter-content{
+
+    text-align:center;
 
 }
 
@@ -137,17 +98,65 @@ body{
 
     font-family:'Cinzel',serif;
 
-    color:#C9A44C;
+    color:#c9a44c;
 
-    font-size:36px;
+    font-size:38px;
+
+    margin-bottom:10px;
 
 }
 
 .letter p{
 
-    margin-top:10px;
+    color:#666;
 
     letter-spacing:2px;
+
+}
+
+/* Envelope Body */
+
+.envelope-body{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+
+    height:160px;
+
+    background:#f7efe3;
+
+    border:2px solid #d4af37;
+
+    border-radius:0 0 12px 12px;
+
+    z-index:3;
+
+}
+
+/* Flap */
+
+.flap{
+
+    position:absolute;
+
+    top:0;
+
+    width:100%;
+
+    height:120px;
+
+    background:#f2e5cf;
+
+    clip-path:polygon(0 0,100% 0,50% 100%);
+
+    transform-origin:top;
+
+    transition:1s ease;
+
+    z-index:4;
 
 }
 
@@ -159,7 +168,7 @@ body{
 
     left:50%;
 
-    top:90px;
+    top:-25px;
 
     transform:translateX(-50%);
 
@@ -169,7 +178,7 @@ body{
 
     border-radius:50%;
 
-    background:#C9A44C;
+    background:#c9a44c;
 
     color:white;
 
@@ -181,23 +190,23 @@ body{
 
     font-weight:bold;
 
-    z-index:10;
+    font-size:18px;
 
-    box-shadow:0 0 20px rgba(201,164,76,.5);
+    box-shadow:0 0 15px rgba(201,164,76,.5);
+
+    z-index:5;
 
 }
-
-/* Text */
 
 .tap{
 
     margin-top:40px;
 
-    color:#8B6B3E;
+    text-align:center;
+
+    color:#8b6b3d;
 
     letter-spacing:2px;
-
-    font-size:15px;
 
 }
 /* ===========================
