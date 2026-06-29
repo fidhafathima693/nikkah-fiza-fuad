@@ -695,3 +695,90 @@ opacity:0;
     line-height:1.8;
 
 }
+/* ===========================
+   VENUE
+=========================== */
+
+.venue-section{
+
+    padding:90px 20px;
+
+    background:#fffdf9;
+
+    text-align:center;
+
+}
+
+.venue-card{
+
+    max-width:550px;
+
+    margin:50px auto;
+
+    background:white;
+
+    padding:45px 35px;
+
+    border-radius:22px;
+
+    border:1px solid rgba(201,164,76,.25);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.venue-icon{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+.venue-card h3{
+
+    font-family:'Cinzel',serif;
+
+    color:#b68a2d;
+
+    margin-bottom:15px;
+
+}
+
+.venue-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.map-btn{
+
+    display:inline-block;
+
+    background:#c9a44c;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.map-btn:hover{
+
+    background:#b48d2b;
+
+    transform:translateY(-3px);
+
+}
