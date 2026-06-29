@@ -1,3 +1,8 @@
+window.onload = () => {
+
+    document.body.style.opacity = "1";
+
+};
 const envelope = document.getElementById("envelope");
 const opening = document.getElementById("opening");
 const mainContent = document.getElementById("mainContent");
