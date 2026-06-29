@@ -2,16 +2,17 @@ window.onload = () => {
 
     document.body.style.opacity = "1";
 
+    document.body.style.overflow = "hidden";
+
 };
+
 const envelope = document.getElementById("envelope");
+const seal = document.getElementById("seal");
 const opening = document.getElementById("opening");
 const mainContent = document.getElementById("mainContent");
 const music = document.getElementById("bgMusic");
 
 mainContent.style.display = "none";
-document.body.style.overflow = "hidden";
-
-const seal = document.getElementById("seal");
 
 seal.addEventListener("click", () => {
 
@@ -22,20 +23,21 @@ seal.addEventListener("click", () => {
     setTimeout(() => {
 
         opening.style.opacity = "0";
-        opening.style.transition = "1s";
 
-    },1200);
+    }, 1200);
 
     setTimeout(() => {
 
         opening.style.display = "none";
+
         mainContent.style.display = "block";
 
         document.body.style.overflowY = "auto";
 
-    },2200);
+    }, 2200);
 
 });
+
 /* ===========================
    COUNTDOWN
 =========================== */
@@ -48,17 +50,18 @@ setInterval(() => {
 
     const distance = weddingDate - now;
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    if (distance <= 0) return;
 
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    document.getElementById("days").textContent =
+        Math.floor(distance / (1000 * 60 * 60 * 24));
 
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById("hours").textContent =
+        Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById("minutes").textContent =
+        Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
+    document.getElementById("seconds").textContent =
+        Math.floor((distance % (1000 * 60)) / 1000);
 
-},1000);
+}, 1000);
