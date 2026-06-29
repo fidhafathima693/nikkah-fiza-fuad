@@ -9,8 +9,11 @@ const mainContent = document.getElementById("mainContent");
 const music = document.getElementById("bgMusic");
 
 mainContent.style.display = "none";
+document.body.style.overflow = "hidden";
 
-envelope.addEventListener("click", () => {
+const seal = document.getElementById("seal");
+
+seal.addEventListener("click", () => {
 
     envelope.classList.add("open");
 
