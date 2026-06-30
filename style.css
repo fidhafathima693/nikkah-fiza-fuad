@@ -13,136 +13,17 @@ body{
     overflow:hidden;
     background:#FAF6F0;
 }
-/* HERO OPENING SCREEN */
-
 #opening{
-
     position:fixed;
-
     inset:0;
-
-    background:url("image_1b3e75aa.png") center/cover no-repeat;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
     z-index:9999;
-
-}
-
-.hero-overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    background:rgba(30,20,10,.35);
-
-    backdrop-filter:blur(2px);
-
-}
-
-.hero-content{
-
-    position:relative;
-
-    text-align:center;
-
-    color:white;
-
-    padding:30px;
-
-}
-
-.arabic-title{
-
-    font-family:'Amiri',serif;
-
-    font-size:40px;
-
-    color:#f7d98a;
-
-}
-
-.subtitle{
-
-    margin-top:20px;
-
-    letter-spacing:4px;
-
-    font-size:18px;
-
-}
-
-.bride,
-.groom{
-    font-family:'Cinzel',serif;
-    font-size:42px;
-    line-height:1.2;
-    color:#ffffff;
-    margin:12px 0;
-    text-shadow:
-        0 2px 8px rgba(0,0,0,.6),
-        0 0 18px rgba(212,175,55,.35);
-}
-
-.and{
-    font-family:'Cinzel',serif;
-    font-size:22px;
-    color:#f5d88d;
-    font-style:italic;
-    margin:8px 0;
-}
-
-.verse{
-    margin-top:20px;
-    color:#fff6e8;
-    line-height:1.7;
-    font-size:14px;
-    text-shadow:0 2px 6px rgba(0,0,0,.5);
-}
-
-.verse span{
-    color:#f5d88d;
-}
-
-.seal-button{
-
-    margin-top:25px;
-
-    width:170px;
-
-    height:170px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:#9c6b2f;
-
-    color:white;
-
-    font-size:22px;
-
-    font-family:'Cinzel',serif;
-
     cursor:pointer;
-
-    box-shadow:0 0 35px rgba(212,175,55,.6);
-
-    animation:pulse 2s infinite;
-
 }
 
-@keyframes pulse{
-
-0%{transform:scale(1);}
-50%{transform:scale(1.06);}
-100%{transform:scale(1);}
-
+.cover-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 /* ===========================
    FLOATING PETALS
