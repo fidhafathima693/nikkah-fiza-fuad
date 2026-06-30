@@ -5,19 +5,24 @@ window.onload = () => {
     document.body.style.overflow = "hidden";
 
 };
-const openBtn = document.getElementById("openBtn");
 const opening = document.getElementById("opening");
 const mainContent = document.getElementById("mainContent");
+const music = document.getElementById("bgMusic");
 
-opening.addEventListener("click",()=>{
+mainContent.style.display = "none";
 
-    opening.style.opacity="0";
+opening.addEventListener("click", () => {
 
-    setTimeout(()=>{
+    music.play().catch(() => {});
 
-        opening.style.display="none";
-        mainContent.style.display="block";
-        document.body.style.overflowY="auto";
+    opening.style.opacity = "0";
+    opening.style.transition = "1s ease";
+
+    setTimeout(() => {
+
+        opening.style.display = "none";
+        mainContent.style.display = "block";
+        document.body.style.overflowY = "auto";
 
     },1000);
 
