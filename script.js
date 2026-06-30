@@ -8,24 +8,18 @@ window.onload = () => {
 const openBtn = document.getElementById("openBtn");
 const opening = document.getElementById("opening");
 const mainContent = document.getElementById("mainContent");
-const music = document.getElementById("bgMusic");
 
-mainContent.style.display = "none";
+opening.addEventListener("click",()=>{
 
-openBtn.addEventListener("click", () => {
+    opening.style.opacity="0";
 
-    music.play().catch(() => {});
+    setTimeout(()=>{
 
-    opening.style.opacity = "0";
-    opening.style.transition = "1s ease";
+        opening.style.display="none";
+        mainContent.style.display="block";
+        document.body.style.overflowY="auto";
 
-    setTimeout(() => {
-
-        opening.style.display = "none";
-        mainContent.style.display = "block";
-        document.body.style.overflowY = "auto";
-
-    }, 1000);
+    },1000);
 
 });
 /* ===========================
