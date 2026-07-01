@@ -739,3 +739,27 @@ body{
     opacity:1;
     transform:translateY(0);
 }
+/* ===========================
+   GOLD DIVIDER
+=========================== */
+
+.section-divider{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:70px auto;
+}
+
+.section-divider::before,
+.section-divider::after{
+    content:"";
+    width:90px;
+    height:1px;
+    background:#d4af37;
+}
+
+.section-divider span{
+    color:#d4af37;
+    font-size:24px;
+    margin:0 18px;
+}
