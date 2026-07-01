@@ -74,7 +74,9 @@ animation-delay:1s;
 
 .hero{
 
-padding:80px 25px;
+.hero{
+    padding:50px 25px 30px;
+}
 
 background:#fffdf9;
 
@@ -227,7 +229,9 @@ opacity:0;
 
 .event-section{
 
-    padding:80px 25px;
+    .event-section{
+    padding:40px 25px 60px;
+    }
     background:#fdf8f2;
     text-align:center;
 
@@ -238,14 +242,13 @@ opacity:0;
     font-family:'Cinzel',serif;
     font-size:36px;
     color:#b68a2d;
-    margin-bottom:50px;
+    margin-bottom:25px;
 
 }
 
 .event-card{
-
     max-width:850px;
-    margin:auto;
+    margin:20px auto 0;
 
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -308,7 +311,7 @@ opacity:0;
 
 .countdown-section{
 
-    padding:90px 20px;
+    padding:40px 20px;
 
     background:#fffdf9;
 
@@ -381,7 +384,7 @@ opacity:0;
 
 .venue-section{
 
-    padding:90px 20px;
+    padding:40px 20px;
 
     background:#fffdf9;
 
@@ -468,7 +471,7 @@ opacity:0;
 
 .dua-section{
 
-    padding:90px 20px;
+    padding:40px 20px;
 
     background:#fdf8f2;
 
@@ -539,7 +542,9 @@ opacity:0;
 
 .thankyou{
 
-    padding:100px 25px;
+    .thankyou{
+    padding:50px 25px 60px;
+    }
 
     text-align:center;
 
@@ -747,7 +752,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    margin:70px auto;
+    margin:15px auto;
 }
 
 .section-divider::before,
