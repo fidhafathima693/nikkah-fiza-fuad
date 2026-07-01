@@ -4,7 +4,7 @@ window.onload = () => {
 
 };
 
-
+const openBtn = document.getElementById("openBtn");
 const opening = document.getElementById("opening");
 const mainContent = document.getElementById("mainContent");
 const music = document.getElementById("bgMusic");
@@ -13,7 +13,7 @@ const music = document.getElementById("bgMusic");
 mainContent.style.display = "none";
 
 
-opening.addEventListener("click", function(){
+openBtn.addEventListener("click", () => {
 
     music.play().catch(()=>{});
 
@@ -23,12 +23,11 @@ opening.addEventListener("click", function(){
 
     setTimeout(()=>{
 
-        opening.style.display = "none";
+        opening.style.display="none";
 
-        mainContent.style.display = "block";
+        mainContent.style.display="block";
 
-        document.body.style.overflowY = "auto";
-
+        document.body.style.overflowY="auto";
 
     },1000);
 
