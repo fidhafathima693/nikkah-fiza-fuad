@@ -575,23 +575,20 @@ opacity:0;
 }
 
 .couple-sign{
-
-    font-family:'Cinzel',serif;
-
-    color:#c9a44c;
-
-    font-size:42px;
-
-    margin-top:20px;
-
+    font-family:'Cormorant Garamond', serif;
+    font-size:28px;
+    font-weight:500;
+    color:#b68a2d;
+    line-height:1.6;
+    letter-spacing:1px;
+    text-align:center;
+    margin-top:15px;
 }
 
 .couple-sign span{
-
-    margin:0 12px;
-
     color:#8b6b3d;
-
+    margin:0 8px;
+    font-size:24px;
 }
 
 footer{
